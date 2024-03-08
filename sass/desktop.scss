@@ -1,0 +1,157 @@
+@import 'guide.scss';
+
+// Main Container
+.main-wrapper {
+	width: 600px;
+	height: 650px;
+	padding: 20px;
+	font-family: $primary-font;
+	background-color: $white;
+	border-radius: 10px;
+}
+
+// Principal Section
+.notifications {
+	@include flexbox(column, null, start, 10px);
+	height: 100%;
+}
+
+// Notifications indicator
+.notifications__indicator {
+	@include flexbox(row, null, center, 10px);
+	width: 100%;
+}
+.indicator__title {
+	margin: 0;
+	font-size: $lg-size;
+	font-weight: $ex-bold;
+	color: $verydark-blue;
+}
+.indicator__quantity {
+	display: inline-block;
+	width: 25px;
+	height: 20px;
+	padding: 2px;
+	font-size: $ex-sm-size;
+	font-weight: $medium;
+	color: $white;
+	text-align: center;
+	background-color: $blue;
+	border-radius: 5px;
+}
+.indicator-btn {
+	margin-left: auto;
+	font-size: 1.4rem;
+	font-weight: $medium;
+	color: $dark-grayish-blue;
+	background-color: $white;
+	border: none;
+	&:hover {
+		color: $blue;
+		cursor: pointer;
+	}
+}
+
+// Notifications
+.notification {
+	@include flexbox(row, start, center, 10px);
+	width: 100%;
+	padding: 10px;
+	background-color: $very-light-grayish-blue;
+	border-radius: 10px;
+}
+.profile__img {
+	width: 35px;
+	height: 35px;
+	border-radius: 100%;
+}
+.profile__info {
+	@include flexbox(column, center,);
+}
+.notification__description {
+	margin: 0 0 5px;
+	font-size: $sm-size;
+	color: $dark-grayish-blue;
+	span {
+		font-weight: $ex-bold;
+		color: $verydark-blue;
+		&:hover {
+			color: $blue;
+			cursor: pointer;
+		}
+	}
+	a {
+		font-weight: $ex-bold;
+		text-decoration: none;
+		color: $dark-grayish-blue;
+		&:hover {
+			color: $blue;
+		}
+	}
+}
+.notification-date {
+	font-size: $ex-sm-size;
+	font-weight: $medium;
+	color: $grayish-blue;
+}
+.indicator-icon {
+	margin-bottom: 15px;
+	border: 3px solid $red;
+	border-radius: 100%;
+}
+
+// Toggle
+.notification-toggle {
+	width: 100%;
+	background-color: $very-light-grayish-blue;
+	border-radius: 10px;
+}
+.notification-toggle[open] {
+	background-color: $white;
+}
+.open-toggle {
+	@include flexbox(row, start, center, 10px);
+	padding: 10px;
+	border-radius: 10px;
+}
+.hide-notification--description {
+	width: 90%;
+	height: 60px;
+	margin-left: auto;
+	padding: 10px;
+	font-size: $ex-sm-size;
+	font-weight: $medium;
+	color: $dark-grayish-blue;
+	background-color: $white;
+	border: 1px solid $light-grayish-blue-1;
+	border-radius: 5px;
+	&:hover {
+		background-color: $light-grayish-blue-1;
+		cursor: pointer;
+	}
+}
+
+// Read Notifications
+.read {
+	background-color: $white;
+}
+
+// Specific Elements styles
+#group-link {
+	color: $blue;
+}
+.post {
+	margin-left: auto;
+}
+.post-img {
+	width: 35px;
+	height: 35px;
+	margin-left: auto;
+}
+
+// Breakpoints
+@media screen and (height: 600px) {
+	body {
+		height: auto;
+	}
+}

@@ -1,0 +1,41 @@
+@import 'guide.scss';
+
+// Main Container
+.main-wrapper {
+	width: 100%;
+	padding: 0;
+}
+
+// Toggle
+.hide-notification--description {
+	height: 70px;
+}
+
+// Breakpoints
+@media screen and (min-height: 740px) and (max-height: 932px) {
+	body {
+		height: 100vh;
+	}
+}
+@media screen and (width: 540px) {
+	body {
+		height: 100vh;
+		padding: 30px 8vw;
+	}
+}
+@media screen and (width: 280px) {
+	// Notifications indicator
+	.indicator__title {
+		font-size: $md-size;
+	}
+	.indicator-btn {
+		font-size: $ex-sm-size;
+	}
+	.notification__description {
+		font-size: $ex-sm-size;
+	}
+	// Toggle
+	.hide-notification--description {
+		height: auto;
+	}
+}

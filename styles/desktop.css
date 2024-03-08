@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  width: 100%;
+  height: 100vh;
+  padding: 30px 10px;
+  margin: 0;
+  background-color: hsl(210, 60%, 98%);
+}
+
+@media screen and (max-width: 540px) {
+  body {
+    height: auto;
+    background-color: hsl(0, 0%, 100%);
+  }
+}
+.main-wrapper {
+  width: 600px;
+  height: 650px;
+  padding: 20px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+}
+
+.notifications {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  height: 100%;
+}
+
+.notifications__indicator {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.indicator__title {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 800;
+  color: hsl(224, 21%, 14%);
+}
+
+.indicator__quantity {
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  padding: 2px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  background-color: hsl(219, 85%, 26%);
+  border-radius: 5px;
+}
+
+.indicator-btn {
+  margin-left: auto;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: hsl(219, 12%, 42%);
+  background-color: hsl(0, 0%, 100%);
+  border: none;
+}
+.indicator-btn:hover {
+  color: hsl(219, 85%, 26%);
+  cursor: pointer;
+}
+
+.notification {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  background-color: hsl(210, 60%, 98%);
+  border-radius: 10px;
+}
+
+.profile__img {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+}
+
+.profile__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.notification__description {
+  margin: 0 0 5px;
+  font-size: 1.4rem;
+  color: hsl(219, 12%, 42%);
+}
+.notification__description span {
+  font-weight: 800;
+  color: hsl(224, 21%, 14%);
+}
+.notification__description span:hover {
+  color: hsl(219, 85%, 26%);
+  cursor: pointer;
+}
+.notification__description a {
+  font-weight: 800;
+  text-decoration: none;
+  color: hsl(219, 12%, 42%);
+}
+.notification__description a:hover {
+  color: hsl(219, 85%, 26%);
+}
+
+.notification-date {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: hsl(219, 14%, 63%);
+}
+
+.indicator-icon {
+  margin-bottom: 15px;
+  border: 3px solid hsl(1, 90%, 64%);
+  border-radius: 100%;
+}
+
+.notification-toggle {
+  width: 100%;
+  background-color: hsl(210, 60%, 98%);
+  border-radius: 10px;
+}
+
+.notification-toggle[open] {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.open-toggle {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.hide-notification--description {
+  width: 90%;
+  height: 60px;
+  margin-left: auto;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: hsl(219, 12%, 42%);
+  background-color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(211, 68%, 94%);
+  border-radius: 5px;
+}
+.hide-notification--description:hover {
+  background-color: hsl(211, 68%, 94%);
+  cursor: pointer;
+}
+
+.read {
+  background-color: hsl(0, 0%, 100%);
+}
+
+#group-link {
+  color: hsl(219, 85%, 26%);
+}
+
+.post {
+  margin-left: auto;
+}
+
+.post-img {
+  width: 35px;
+  height: 35px;
+  margin-left: auto;
+}
+
+@media screen and (height: 600px) {
+  body {
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=desktop.css.map */
