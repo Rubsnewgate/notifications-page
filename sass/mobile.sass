@@ -1,0 +1,35 @@
+@use 'guide.sass'
+
+// main container
+.main-wrapper
+	width: 100%
+	padding: 0
+
+// toggle
+.hide-notification--description
+	height: 70px
+
+// breakpoints
+@media screen and (min-height: 740px) and (max-height: 932px)
+	body
+		height: 100vh
+
+@media screen and (width: 540px)
+	body
+		height: 100vh
+		padding: 30px 8vw
+
+@media screen and (width: 280px)
+	// notifications indicator
+	.indicator__title
+		font-size: guide.$md-size
+
+	.indicator-btn
+		font-size: guide.$ex-sm-size
+
+	.notification__description
+		font-size: guide.$ex-sm-size
+
+	// toggle
+	.hide-notification--description
+		height: auto

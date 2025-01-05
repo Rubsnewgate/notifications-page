@@ -1,0 +1,143 @@
+@use 'guide.sass'
+
+// main container
+.main-wrapper
+	width: 600px
+	height: 650px
+	padding: 20px
+	font-family: guide.$primary-font
+	background-color: guide.$white
+	border-radius: 10px
+
+// principal section
+.notifications
+	@include guide.flexbox(column, null, start, 10px)
+	height: 100%
+
+// notifications indicator
+.notifications__indicator
+	@include guide.flexbox(row, null, center, 10px)
+	width: 100%
+
+.indicator__title
+	margin: 0
+	font-size: guide.$lg-size
+	font-weight: guide.$ex-bold
+	color: guide.$verydark-blue
+
+.indicator__quantity
+	display: inline-block
+	width: 25px
+	height: 20px
+	padding: 2px
+	font-size: guide.$ex-sm-size
+	font-weight: guide.$medium
+	color: guide.$white
+	text-align: center
+	background-color: guide.$blue
+	border-radius: 5px
+
+.indicator-btn
+	margin-left: auto
+	font-size: 1.4rem
+	font-weight: guide.$medium
+	color: guide.$dark-grayish-blue
+	background-color: guide.$white
+	border: none
+	&:hover
+		color: guide.$blue
+		cursor: pointer
+
+// notifications
+.notification
+	@include guide.flexbox(row, start, center, 10px)
+	width: 100%
+	padding: 10px
+	background-color: guide.$very-light-grayish-blue
+	border-radius: 10px
+
+.profile__img
+	width: 35px
+	height: 35px
+	border-radius: 100%
+
+.profile__info
+	@include guide.flexbox(column, center,)
+
+.notification__description
+	margin: 0 0 5px
+	font-size: guide.$sm-size
+	color: guide.$dark-grayish-blue
+	span
+		font-weight: guide.$ex-bold
+		color: guide.$verydark-blue
+		&:hover
+			color: guide.$blue
+			cursor: pointer
+
+	a
+		font-weight: guide.$ex-bold
+		text-decoration: none
+		color: guide.$dark-grayish-blue
+		&:hover
+			color: guide.$blue
+
+.notification-date
+	font-size: guide.$ex-sm-size
+	font-weight: guide.$medium
+	color: guide.$grayish-blue
+
+.indicator-icon
+	margin-bottom: 15px
+	border: 3px solid guide.$red
+	border-radius: 100%
+
+// toggle
+.notification-toggle
+	width: 100%
+	background-color: guide.$very-light-grayish-blue
+	border-radius: 10px
+
+	&[open]
+		background-color: guide.$white
+
+.open-toggle
+	@include guide.flexbox(row, start, center, 10px)
+	padding: 10px
+	border-radius: 10px
+
+.hide-notification--description
+	width: 90%
+	height: 60px
+	margin-left: auto
+	padding: 10px
+	font-size: guide.$ex-sm-size
+	font-weight: guide.$medium
+	color: guide.$dark-grayish-blue
+	background-color: guide.$white
+	border: 1px solid guide.$light-grayish-blue-1
+	border-radius: 5px
+	&:hover
+		background-color: guide.$light-grayish-blue-1
+		cursor: pointer
+
+// read notifications
+.read
+	background-color: guide.$white
+
+// specific elements styles
+#group-link
+	color: guide.$blue
+
+.post
+	margin-left: auto
+
+	&-img
+		width: 35px
+		height: 35px
+		margin-left: auto
+
+// breakpoints
+@media screen and (height: 600px)
+	body
+		height: auto

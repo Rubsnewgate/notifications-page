@@ -10,7 +10,7 @@ body {
   display: grid;
   place-content: center;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   padding: 30px 10px;
   margin: 0;
   background-color: hsl(210, 60%, 98%);
@@ -18,7 +18,6 @@ body {
 
 @media screen and (max-width: 540px) {
   body {
-    height: auto;
     background-color: hsl(0, 0%, 100%);
   }
 }
